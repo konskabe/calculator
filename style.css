@@ -17,11 +17,11 @@ body{
     align-items: center;
     margin: auto;
     background-color: #79a2c5;
-    width: 500px;
-    height: 700px;
+    /* width: 500px; */
+    /* height: 700px; */
     gap: 20px;
     border-radius: 10px;
-    padding-top: 10px;
+    padding: 30px;
     border: solid black;
     
 }
@@ -80,4 +80,19 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .buttons{
+        grid-template-rows: repeat(5,74px);
+        grid-template-columns: repeat(4,74px);
+    }
+    .calculator{
+        padding: 20px;
+        margin-top: 0;
+    }
+    .display{
+        box-sizing: border-box;
+        width: 326px;
+    }
 }
